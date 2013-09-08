@@ -26,7 +26,6 @@ Press any link to continue <blink>_</blink>
 <a href="index.html">index</a> | 
 <a href="contact.html">webmaster</a> | 
 </div>
-
 </body>
 </html>'
 
