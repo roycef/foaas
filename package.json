@@ -1,7 +1,7 @@
 {
-  "name": "foaas",
+  "name": "bsodaas",
   "version": "0.0.1",
-  "description": "Fuck Off As A Service",
+  "description": "Blue Screen of Death As A Service",
   "main": "server.coffee",
   "scripts": {
     "start": "./node_modules/.bin/coffee server.coffee",

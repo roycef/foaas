@@ -5,22 +5,29 @@ operations = require './lib/operations'
 
 template = (message, subtitle) -> '
 <html>
-  <head>
-    <title>Fuck Off As A Service (FOAAS)</title>
-    <meta charset="utf-8">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  </head>
+<head>
+<title>- ooops! -</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+<span class="neg">ERROR 404</span>
+<p>
+The page is missing or never was written. You can wait and<br />
+see if it becomes available again, or you can restart your computer.  
+</p>
+<p>
+* Send us an e-mail to notify this and try it later.<br />
 
-  <body style="margin-top:40px;">
-    <div class="container">
-      <div id="view-10" view=""><div class="hero-unit">
-        <h1>'+sanitizer.escape(message)+'</h1>
-        <p><em>'+sanitizer.escape(subtitle)+'</em></p>
-        </div>
-      </div>
-    </div>
-    <script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-42551488-1","herokuapp.com"),ga("send","pageview");</script>
-  </body>
+* Press CTRL+ALT+DEL to restart your computer. You will<br />
+ &nbsp; lose unsaved information in any programs that are running.
+</p>
+Press any link to continue <blink>_</blink>
+<div class="menu">
+<a href="index.html">index</a> | 
+<a href="contact.html">webmaster</a> | 
+</div>
+
+</body>
 </html>'
 
 dooutput = (res, message, subtitle) ->
